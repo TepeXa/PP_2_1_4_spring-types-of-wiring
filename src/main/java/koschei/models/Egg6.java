@@ -1,9 +1,17 @@
 package koschei.models;
 
+import org.springframework.beans.factory.annotation.Autowired;
+
 public class Egg6 {
+    @Autowired
+    private Needle7 needle;
+
+    public Egg6(Needle7 needle7) {
+
+    }
 
     @Override
     public String toString() {
-        return ", РІ СЏР№С†Рµ РёРіРѕР»РєР° " + "";
+        return ", в яйце иголка " + needle.toString();
     }
 }
